@@ -35,7 +35,7 @@
         },
         {
             "key": "compiled-templates-folder",
-            "name": "Compiled Templates Directory Path. Will be created if it doesn't exist. **Used by Smarty to store compiled templates**",
+            "name": "Compiled Templates Directory Path. Will be created if it doesn't exist. <b>Used by Smarty to store compiled templates</b>",
             "required": true,
             "type": "text",
             "repeatable": false,
@@ -50,12 +50,18 @@
         },
         {
             "key": "img-folder",
-            "name": "Images Folder. Will be created if it doesn't exist. **Must be a publically acccessible folder given as a path relative to your REDCap external modules folder i.e '../../images'**",
+            "name": "Images Folder. Will be created if it doesn't exist. <br><b>Must be a publically acccessible folder given as a path relative to your REDCap external modules folder i.e '../../images'</b>",
             "required": true,
             "type": "text",
             "repeatable": false,
             "super-users-only": true
-        }   
+        },
+        {
+            "key": "manual-input-record-list",
+            "name": "Switch to manual input of record(s).<br> This can significantly improve module page loading time.",
+            "type": "checkbox",
+            "super-users-only": true
+        }
     ],
     "project-settings": [
         {
